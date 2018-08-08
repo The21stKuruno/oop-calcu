@@ -8,9 +8,22 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<h1>Simple OOP Calculator</h1>
-  <?php
-    
-  ?>
+<div class="container">
+  <h1>Simple OOP Calculator</h1>
+  <form action="includes/calculate.php">
+    <input type="text" name="txtNumOne" placeholder="Num One">
+    <input type="text" name="txtNumTwo" placeholder="Num Two">
+    <select>
+      <option value="add">Add</option>
+      <option value="subtract">Subtract</option>
+      <option value="multiply">Multiply</option>
+      <option value="divide">Divide</option>
+  </select> 
+    <button type="submit" name="smbCalculate">Calculate</button>
+  </form>
+    <?php
+      
+    ?>
+</div>
 </body>
 </html>
