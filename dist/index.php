@@ -10,14 +10,14 @@
 <body>
 <div class="container">
   <h1>Simple OOP Calculator</h1>
-  <form action="includes/calculate.php">
+  <form action="includes/calculate.inc.php">
     <input type="text" name="txtNumOne" placeholder="Num One">
     <input type="text" name="txtNumTwo" placeholder="Num Two">
-    <select>
-      <option value="add">Add</option>
-      <option value="subtract">Subtract</option>
-      <option value="multiply">Multiply</option>
-      <option value="divide">Divide</option>
+    <select name="sltOperator">
+      <option>Add</option>
+      <option>Subtract</option>
+      <option>Multiply</option>
+      <option>Divide</option>
   </select> 
     <button type="submit" name="smbCalculate">Calculate</button>
   </form>
