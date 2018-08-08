@@ -1,0 +1,23 @@
+{
+  "name": "oop-calcu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The21stKuruno/oop-calcu.git"
+  },
+  "author": "The21stKuruno",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/The21stKuruno/oop-calcu/issues"
+  },
+  "homepage": "https://github.com/The21stKuruno/oop-calcu#readme",
+  "dependencies": {
+    "node-sass": "^4.9.2",
+    "npm": "^6.3.0"
+  }
+}
