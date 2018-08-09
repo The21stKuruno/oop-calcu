@@ -10,7 +10,7 @@
 <body>
 <div class="container">
   <h1>Simple OOP Calculator</h1>
-  <form action="includes/calculate.inc.php">
+  <form action="includes/calculate.inc.php" method="POST">
     <input type="text" name="txtNumOne" placeholder="Num One">
     <input type="text" name="txtNumTwo" placeholder="Num Two">
     <select name="sltOperator">

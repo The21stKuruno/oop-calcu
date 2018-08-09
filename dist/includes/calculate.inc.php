@@ -1,8 +1,8 @@
 <?php
-  if(isset($_GET['smbCalculate'])) {
-    $txtNumOne = $_GET['txtNumOne'];
-    $txtNumTwo = $_GET['txtNumTwo'];
-    $operator = $_GET['sltOperator'];
+  if(isset($_POST['smbCalculate'])) {
+    $txtNumOne = $_POST['txtNumOne'];
+    $txtNumTwo = $_POST['txtNumTwo'];
+    $operator = $_POST['sltOperator'];
     if(empty($txtNumOne) || empty($txtNumTwo)) {
       header("Location: ../index.php?calculate=emptyfields");
     } else {
