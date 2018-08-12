@@ -10,7 +10,7 @@
 <body>
 <div class="container">
   <h1>Simple OOP Calculator</h1>
-  <form action="includes/calculate.inc.php" method="POST">
+  <form action="calculate.php" method="POST">
     <input type="text" name="txtNumOne" placeholder="Num One">
     <input type="text" name="txtNumTwo" placeholder="Num Two">
     <select name="sltOperator">
@@ -23,7 +23,7 @@
     <?php
       if (isset($_GET['result'])) {
         $result = $_GET['result'];
-        echo "<p>Answer: $result</p>";
+        echo "<p>Result: $result</p>";
       }
     ?>
   </form>
