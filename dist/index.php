@@ -20,10 +20,13 @@
       <option>Divide</option>
   </select> 
     <button type="submit" name="smbCalculate">Calculate</button>
-  </form>
     <?php
-      
+      if (isset($_GET['result'])) {
+        $result = $_GET['result'];
+        echo "<p>Answer: $result</p>";
+      }
     ?>
+  </form>
 </div>
 </body>
 </html>

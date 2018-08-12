@@ -29,6 +29,7 @@ button {
   }
 
   form {
+    border-radius: 3px;
     background: $white;
     color: $black;
     padding: 40px 20px 20px 20px;
@@ -49,12 +50,22 @@ button {
     height: 30px;
     font-size: 1rem;
     line-height: 1.1rem;
+    border-radius: 1px;
+    border: 1px solid $primary-color;
+    color: $black;
   }
 
   button {
     background: $blue;
-    border: 0;
-    border-radius: 3px;
     color: $white;
+    border: none;
+  }
+
+  ::placeholder {
+    color: $primary-color;
+  }
+
+  p {
+    padding: 5px 0;
   }
 }

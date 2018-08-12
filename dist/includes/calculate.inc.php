@@ -3,21 +3,26 @@
     $txtNumOne = $_POST['txtNumOne'];
     $txtNumTwo = $_POST['txtNumTwo'];
     $operator = $_POST['sltOperator'];
+    $result = 0;
     if(empty($txtNumOne) || empty($txtNumTwo)) {
       header("Location: ../index.php?calculate=emptyfields");
     } else {
       switch ($operator) {
         case 'Add':
-        echo $txtNumOne + $txtNumTwo;
+        $result = $txtNumOne + $txtNumTwo;
+        header("Location: ../index.php?calculate=success&result=$result");
         break;
         case 'Subtract':
-        echo $txtNumOne - $txtNumTwo;
+        $result = $txtNumOne - $txtNumTwo;
+        header("Location: ../index.php?calculate=success&result=$result");
         break;
         case 'Multiply':
-        echo $txtNumOne * $txtNumTwo;
+        $result = $txtNumOne * $txtNumTwo;
+        header("Location: ../index.php?calculate=success&result=$result");
         break;
         case 'Divide':
-        echo $txtNumOne / $txtNumTwo;
+        $result = $txtNumOne / $txtNumTwo;
+        header("Location: ../index.php?calculate=success&result=$result");
         break;
       }
     }
